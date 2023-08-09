@@ -1,6 +1,6 @@
 import React from 'react';
+import { Banner } from '../components/AllComponents';
 import Headerbar from '../layout/Header';
-import Banner from '../components/Banner';
 import List from '../data/data.json';
 import ListItems from '../components/Items';
 
