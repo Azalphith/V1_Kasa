@@ -1,14 +1,28 @@
 @import './base/colorBase.scss';
 
-.ban{
-    height: 223px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../pictures//banner.png'), ;
-    color: $color-primary;
-    background-position: bottom;
-    background-size: cover;
+.ban {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 30px auto 45px;
+
+  img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; 
+    filter: brightness(70%);
+  }
+
+  .t1 {
+    position: absolute;
     text-align: center;
-    border-radius: 25px;
-    padding-left: 20px;
-    margin-bottom: 22px;
-    
+    color: $color-primary;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
+

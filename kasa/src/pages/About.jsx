@@ -1,14 +1,16 @@
 import React from 'react';
-import Headerbar from '../layout/Header';
+import Banner from '../components/Banner';
+import ImageApropos from '../pictures/banner.png'
 
 
-export default function About() {
+function About() {
 	return (
 		<div>
-			<Headerbar/>
+			<Banner image={ImageApropos} titre=""/>
 			<div>
-				yo !
+				yo je suis dans a propos !
 			</div>
 		</div>
-	)
+	);
 }
+export default About;

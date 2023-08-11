@@ -1,0 +1,26 @@
+.gallery_item {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .gallery_title {
+      margin-top: auto;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }

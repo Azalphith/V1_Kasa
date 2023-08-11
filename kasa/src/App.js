@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './pages/Home';
+import RouterList from "../src/router/RouterList"
 import './App.css';
 
 
@@ -7,7 +7,10 @@ import './App.css';
 
 function App() {
   return (
-      <Home/>
+    <div>
+      <RouterList/>
+
+    </div>
   );
 }
 
