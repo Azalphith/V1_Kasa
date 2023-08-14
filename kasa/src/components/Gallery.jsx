@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/Gallery.scss';
 
-function ListItems({id, appart, titre}){
+function Gallery ({id, appart, titre}){
 return(
     <div id={id} className='gallery'>
         <img src={appart} alt="Vu de l'appartement" className='gallery_item'/>
@@ -10,4 +10,4 @@ return(
 );
 }
 
-export default ListItems;
+export default Gallery;

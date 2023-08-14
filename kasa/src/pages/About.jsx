@@ -1,16 +1,13 @@
 import React from 'react';
-import Banner from '../components/Banner';
-import ImageApropos from '../pictures/banner.png'
+import MainAbout from '../components/MainAbout';
+import BannerAbout from '../components/BannerAbout';
 
 
-function About() {
+export default function Home() {
 	return (
 		<div>
-			<Banner image={ImageApropos} titre=""/>
-			<div>
-				yo je suis dans a propos !
-			</div>
+			<BannerAbout/>
+			<MainAbout/>
 		</div>
 	);
 }
-export default About;

@@ -1,0 +1,53 @@
+@import '../style/base/anyBase.scss';
+
+    .about-collapse {
+        margin: auto;        
+        width: 100%;        
+        max-width: 1023px;
+        & .about-collapse-title {
+            height: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-secondary;
+            color: $color-primary;
+            font-size: 13px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        & .about-collapse-text {            
+            font-size: 12px;
+            font-weight: 800;
+            color: $color-secondary;
+            background-color: $color-tertiary;
+            border-radius: 5px;
+            padding: 17px 10px 30px 10px;
+            margin-bottom: 20px;
+            transition: all .5s ease-in;
+        }
+    }
+
+
+.active {
+    & .about-collapse-text{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    & i {
+        transition: .5s;
+    }
+}
+
+.false {
+    & .about-collapse-text{
+        visibility: hidden;
+        opacity: 0;        
+    }
+    
+    & i {
+        transform:rotate(180deg);
+        transition: 0.5s;
+    }
+}
