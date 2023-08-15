@@ -1,8 +1,17 @@
 @import '../style/base/anyBase.scss';
 
 .banner-about {
-    max-width: auto;
-    height: 223px;
-    
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 30px auto 45px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px; 
+  filter: brightness(70%);
 }
+
+
 
