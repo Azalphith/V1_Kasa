@@ -1,0 +1,19 @@
+@import "./base/colorBase.scss";
+
+.foot {
+    background-color: black;
+    
+    height: 209px;
+    width: 100%;
+    text-align: center;
+.fimg {
+        width: 122px;
+        margin-top: 62px;
+    }
+.ftext {
+        margin-top: 32.2px;
+        font-size: 12px;
+        color: $color-primary;
+        
+    }
+}

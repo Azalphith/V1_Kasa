@@ -1,0 +1,14 @@
+@import '../style/base/colorBase.scss';
+
+.acc_cover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 30px auto 45px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; 
+    filter: brightness(70%);
+  }

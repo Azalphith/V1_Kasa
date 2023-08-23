@@ -1,0 +1,31 @@
+@import './base/colorBase.scss';
+
+.main_404 {
+    color: $color-secondary;
+    margin-top: 195px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 96px; 
+    font-weight: 700;       
+}
+
+span {
+    font-size: 18px;
+    font-weight: 500;
+    width: 50%;
+    margin: auto;
+    margin-top: 11px;
+}
+
+.nav_404{
+    margin-top: 133px;
+    margin-bottom: 235px;
+    color: $color-secondary;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+
+    

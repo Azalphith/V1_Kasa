@@ -3,7 +3,7 @@ import '../style/BannerAbout.scss';
 
 function BannerAbout() {
     return(
-        <div>
+        <div >
             <img  src={Ban} alt="Seconde bannière" className='banner-about'/>
         </div>
     );

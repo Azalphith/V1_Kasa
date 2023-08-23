@@ -1,5 +1,6 @@
+import React from 'react';
 import { useState } from "react";
-import "../style/Collapse.scss";
+import '../style/Collapse.scss';
 
 const chevron = <i className="fa-solid fa-chevron-up"></i>;
 
