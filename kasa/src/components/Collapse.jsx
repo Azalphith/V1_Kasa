@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from "react";
 import '../style/Collapse.scss';
+import arrow_up from '../pictures/arrow.png';
 
-const chevron = <i className="fa-solid fa-chevron-up"></i>;
+
 
 function Collapse({ title, text, about }) {
 
@@ -16,9 +17,9 @@ function Collapse({ title, text, about }) {
     return (
         // On gère la classe en fonction de si on a cliqué dessus ou non
         <div className={`${about ? "about-collapse" : "collapse"} ${isActive && "active"}`} >
-            <div className="about-collapse-title" onClick={handleToggle}>
+            <div className="about-collapse-title">
                 <p>{title}</p>
-                {chevron}
+                <img src={arrow_up} alt="Flèche vers le bas" className='arrowMoove' onClick={handleToggle}/>
             </div>
             <div className="about-collapse-text">{text}</div>
         </div>

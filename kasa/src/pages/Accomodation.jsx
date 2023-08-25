@@ -5,19 +5,21 @@ import Collapse from '../components/Collapse';
 import "../style/MainAbout.scss";
 import Rate from '../components/Rate';
 import '../style/Accomodation.scss';
+import Carousel from '../components/Carousel';
 
 export default function Accomodation() {
 	const id = useParams();
     const accomodation = List.find(logement => logement.id===id.id);
 	
+
 	console.log(id);
 	return (
 		<div>
 			<div className='acc_cover'>
-				<img src={accomodation.cover} alt="photographie de l'appartement"/>
+				<Carousel imageSlider={accomodation.pictures}/>
+
 			</div>
 			<div>
-				
 				<h1>{accomodation.title}</h1>
 				<span>{accomodation.location}</span>
 				<span>{accomodation.tags}</span>

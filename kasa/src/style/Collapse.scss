@@ -14,7 +14,7 @@
             font-size: 13px;
             padding: 10px 15px 10px 15px;
             border-radius: 5px;
-            cursor: pointer;
+            
         }
         & .about-collapse-text {            
             font-size: 12px;
@@ -28,6 +28,11 @@
         }
     }
 
+.arrowMoove{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
 
 .active {
     & .about-collapse-text{
@@ -41,6 +46,9 @@
 }
 
 .false {
+    & .arrowMoove{
+        transform: rotate(180deg);
+    }
     & .about-collapse-text{
         visibility: hidden;
         opacity: 0;        

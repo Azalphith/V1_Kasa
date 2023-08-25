@@ -1,4 +1,3 @@
-
 import React from "react";
 import starFull from "../pictures/starfull.png";
 import starEmpty from "../pictures/starempty.png";
