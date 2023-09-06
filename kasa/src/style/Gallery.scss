@@ -1,36 +1,28 @@
-@import './base/colorBase.scss';
+@import './base/anyBase.scss';
 
-.gallery_content{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  margin: 30px auto 45px;
+
+.flexbox{
+    @include flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    background-color: $color-tertiary;
+    padding: 50px;
+    border-radius: 25px;
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding:30px;       
+    }
+    @media screen and (min-width: 501px) and (max-width: 1023px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   
+        padding:30px;       
+    }
+    @media screen and (max-width: 500px){
+        padding:10px 0px 10px 0px;  
+        gap: 10px; 
+        background-color: $color-primary;
+    }
 }
-
-.gallery_item {
-    width: calc(33.33% - 200px);
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-    
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-    
-.gallery_title {
-    position: absolute;
-    text-align: center;
-    color: $color-primary;
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }

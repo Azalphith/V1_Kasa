@@ -3,17 +3,26 @@
 .carousel{
     position: relative;
     display: flex;
-    width: 100%;
     height: 415px;
+    width: auto;
     border-radius: 25px;
     background-position: center;
     background-size: cover;
-    width: 95%;
-    margin: 43px auto;
-    @media screen and (max-width: 650px){
-        height: 200px;  
-        margin: 20px auto;   
+    margin: 20px 60px 0px 60px;
+    @media screen and (max-width: 812px){
+        margin: 20px 30px 20px 30px;
     }
+    @media screen and (max-width: 500px){
+      height: 255px;
+      margin: 20px 15px 20px 15px;
+      border-radius: 15px;
+      
+  }
+       
+        
+   
+    
+    
     &-arrow{
         position: absolute;
         top: 50%;

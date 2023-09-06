@@ -6,23 +6,64 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  margin: 30px auto 45px;
-
-  img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 10px; 
+  margin: 30px 35px 20px 35px;
+  @media screen and (max-width: 500px){
+    margin: 0;
+  }
+  
+  .banner_image {
+    width: 1240px;
+    height: 223px;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 25px; 
     filter: brightness(70%);
+    @media screen and (max-width: 812px){
+      border-radius: 10px; 
+      height: 90px;
+    }
   }
 
-  .t1 {
+  .title_ban {
     position: absolute;
+    white-space: nowrap;
     text-align: center;
     color: $color-primary;
     font-size: 35px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 1024px){
+      left: 48%;
+    }
+    @media screen and (max-width: 812px){
+      white-space:normal;
+      font-size: 24px;
+      width: 217px;
+      height: 48px;
+      top: 40%;
+      left: 30%;
+      text-align: start;
+    }
+    @media screen and (max-width: 500px){
+      left: 37%;
+
+    }
+   
+  }
+  
+}
+
+.banner-about{
+  width: 1240px;
+  height: 223px;
+  width: 95%;
+  object-fit: cover;
+  border-radius: 25px; 
+  filter: brightness(70%);
+  @media screen and (max-width: 812px){
+    border-radius: 10px; 
+    height: 223px;
   }
 }
 

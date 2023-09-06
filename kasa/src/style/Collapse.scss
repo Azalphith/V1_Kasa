@@ -1,11 +1,13 @@
-@import '../style/base/colorBase.scss';
+@import '../style/base/anyBase.scss';
 
     .about-collapse {
         margin: auto;        
-        width: 100%;        
-        max-width: 1023px;
+        width: 80%;
+        @media screen and (max-width: 500px){
+            width: 95%;
+        }       
         & .about-collapse-title {
-            height: 10px;
+            height: 35px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -14,9 +16,9 @@
             font-size: 13px;
             padding: 10px 15px 10px 15px;
             border-radius: 5px;
-            
         }
-        & .about-collapse-text {            
+        & .about-collapse-text { 
+            letter-spacing: 1px;           
             font-size: 12px;
             font-weight: 800;
             color: $color-secondary;
@@ -28,6 +30,9 @@
         }
     }
 
+    
+    
+    
 .arrowMoove{
     width: 12px;
     height: 12px;
@@ -38,6 +43,7 @@
     & .about-collapse-text{
         visibility: visible;
         opacity: 1;
+        
     }
     
     & i {
@@ -51,7 +57,11 @@
     }
     & .about-collapse-text{
         visibility: hidden;
-        opacity: 0;        
+        opacity: 0;
+        display: none;        
+    }
+    & .about-collapse-title{
+        margin: 0px 0px 25px 0px;
     }
     
     & i {
