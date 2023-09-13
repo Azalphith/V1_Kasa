@@ -31,7 +31,7 @@ export default function Accomodation() {
 	const equipList = accomodation.equipments.map((equipments, index) => {
 		console.log(equipments);
 		console.log(index);
-		return <div key={index}>{equipments}</div> 
+		return <div className='equipments' key={index}>{equipments}</div> 
 	});
 	
 	return (
@@ -65,7 +65,7 @@ export default function Accomodation() {
 							about={true}
 							title="Description"
 							text={accomodation.description} 
-							className="acc_margin"
+							
 						/>
 					</div>
 					<div className='acc_collapse_right'>
@@ -73,7 +73,7 @@ export default function Accomodation() {
 							about={true}
 							title="Equipements"
 							text={equipList}
-							className="acc_margin"
+							
 						/>
 					</div>
 				</div>
