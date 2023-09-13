@@ -9,6 +9,8 @@
   margin: 30px 35px 20px 35px;
   @media screen and (max-width: 500px){
     margin: 0;
+    margin-bottom: 20px;
+    
   }
   
   .banner_image {
@@ -21,7 +23,14 @@
     @media screen and (max-width: 812px){
       border-radius: 10px; 
       height: 90px;
+      width: 100%;
+      
     }
+    @media screen and (max-width: 500px){
+      width: 91%;
+      
+    }
+    
   }
 
   .title_ban {
@@ -46,7 +55,7 @@
       text-align: start;
     }
     @media screen and (max-width: 500px){
-      left: 37%;
+      left: 38%;
 
     }
    

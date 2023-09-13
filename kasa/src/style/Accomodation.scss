@@ -90,9 +90,9 @@
   background-color: $color-secondary;
   border-radius: 7px;
   color: $color-primary;
-  font-size:xx-small;
+  font-size: 10px;
   @media screen and (max-width: 812px){
-     height: 18px;
+     font-size: 5px;
      width: 84px;
      font-size: 8px;
   }
@@ -105,6 +105,8 @@
   align-self: center;
 }
 
+
+
 .acc_collapse {
         display: flex; 
         justify-content: space-between;
@@ -113,10 +115,17 @@
           flex: 1;
         }
         @media screen and (max-width: 812px){
-          display: block; 
+          display: block;
+          
+           
         }
         
       } 
+
+.acc_margin{
+  margin: none;
+
+}
       
     
 

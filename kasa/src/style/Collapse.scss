@@ -13,26 +13,28 @@
             align-items: center;
             background-color: $color-secondary;
             color: $color-primary;
-            font-size: 13px;
+            font-size: 18px;
             padding: 10px 15px 10px 15px;
             border-radius: 5px;
+            @media screen and (max-width: 812px){
+                font-size: 12px;
+        }
         }
         & .about-collapse-text { 
             letter-spacing: 1px;           
-            font-size: 12px;
-            font-weight: 800;
+            font-size: 22px;
             color: $color-secondary;
             background-color: $color-tertiary;
             border-radius: 5px;
             padding: 17px 10px 30px 10px;
             margin-bottom: 20px;
             transition: all .5s ease-in;
+            @media screen and (max-width: 812px){
+                font-size: 12px;
+        }
         }
     }
 
-    
-    
-    
 .arrowMoove{
     width: 12px;
     height: 12px;

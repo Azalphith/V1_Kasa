@@ -5,14 +5,19 @@ import Collapse from '../components/Collapse';
 import Rate from '../components/Rate';
 import '../style/Accomodation.scss';
 import Carousel from '../components/Carousel';
-import '../style/Collapse.scss';
+import "../style/AccCollapse.css";
+import Error404 from "./404";
+
 
 export default function Accomodation() {
 	const id = useParams();
+	
     const accomodation = List.find(logement => logement.id===id.id);
+	if(accomodation === undefined){
+		return <Error404 />
+	}
+
 	const host = accomodation.host;
-
-
 	const fullName = host.name;
 	const nameParts = fullName.split(' ');
 	const firstName = nameParts[0];
@@ -26,7 +31,7 @@ export default function Accomodation() {
 	const equipList = accomodation.equipments.map((equipments, index) => {
 		console.log(equipments);
 		console.log(index);
-		return <div className='equipments' key={index}>{equipments}</div> 
+		return <div key={index}>{equipments}</div> 
 	});
 	
 	return (
@@ -59,7 +64,8 @@ export default function Accomodation() {
 						<Collapse
 							about={true}
 							title="Description"
-							text={accomodation.description}
+							text={accomodation.description} 
+							className="acc_margin"
 						/>
 					</div>
 					<div className='acc_collapse_right'>
@@ -67,6 +73,7 @@ export default function Accomodation() {
 							about={true}
 							title="Equipements"
 							text={equipList}
+							className="acc_margin"
 						/>
 					</div>
 				</div>

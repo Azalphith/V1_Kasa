@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapse from '../components/Collapse';
-import '../style/MainAbout.scss';
+
 
 function MainAbout() {
     return (

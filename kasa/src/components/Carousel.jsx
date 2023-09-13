@@ -29,7 +29,7 @@ export default function Carousel({imageSlider}) {
                       className='carousel-arrow carousel-arrow-right' 
                       src={Right} 
                       alt="Flèche de droite" 
-                      onClick={nextSlide} // permet de passer à l'image suivante
+                      onClick={nextSlide}
                   />
                   <img 
                       className='carousel-arrow carousel-arrow-left' 

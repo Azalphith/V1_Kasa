@@ -9,10 +9,8 @@ function Rate({ stars }) {
 
     return (
         <React.Fragment>
-            { // On utilise .map sur la variable en fonction de la donnée en paramètre 
+            {
                 ratingScore.map((element) =>
-
-                    // On affiche une étoile pleine suivant la valeur en paramère
                     stars >= element ? (
                         <img
                             src={starFull}
@@ -20,7 +18,6 @@ function Rate({ stars }) {
                             key={element.toString()}
                         />
                     ) : (
-                        // Par défaut on complète par une étoile vide
                         <img
                             src={starEmpty}
                             alt="Etoile vide"
