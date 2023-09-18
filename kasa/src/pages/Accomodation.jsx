@@ -7,7 +7,7 @@ import '../style/Accomodation.scss';
 import Carousel from '../components/Carousel';
 import "../style/AccCollapse.css";
 import Error404 from "./404";
-
+import "../style/HomeColl.scss";
 
 export default function Accomodation() {
 	const id = useParams();
@@ -24,8 +24,6 @@ export default function Accomodation() {
 	const lastName = nameParts.slice(1).join(' ');
 
 	const tagsAcc = accomodation.tags.map((tags, index) => {
-		console.log(tags);
-		console.log(index);
 		return <div className='tags' key={index}>{tags}</div>
 	});
 	const equipList = accomodation.equipments.map((equipments, index) => {

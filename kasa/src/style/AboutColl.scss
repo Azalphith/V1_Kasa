@@ -1,0 +1,76 @@
+@import '../style/base/anyBase.scss';
+
+    .about-collapse {
+        margin: auto;        
+        width: 80%;
+        @media screen and (max-width: 500px){
+            width: 95%;
+        }       
+        & .about-collapse-title {
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-secondary;
+            color: $color-primary;
+            font-size: 18px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 5px;
+            @media screen and (max-width: 812px){
+                font-size: 12px;
+        }
+        }
+        & .about-collapse-text { 
+            letter-spacing: 1px;           
+            font-size: 22px;
+            color: $color-secondary;
+            background-color: $color-tertiary;
+            border-radius: 5px;
+            padding: 17px 10px 30px 10px;
+            margin-bottom: 20px;
+            transition: all .5s ease-in;
+            height: 100%;
+            @media screen and (max-width: 812px){
+                font-size: 12px;
+        }
+        }
+    }
+
+
+.arrowMoove{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.active {
+    & .about-collapse-text{
+        visibility: visible;
+        opacity: 1;
+        
+    }
+    
+    & i {
+        transition: .5s;
+    }
+}
+
+.false {
+    & .arrowMoove{
+        transform: rotate(180deg);
+    }
+    & .about-collapse-text{
+        visibility: hidden;
+        opacity: 0;
+        display: none;        
+    }
+    & .about-collapse-title{
+        margin: 0px 0px 25px 0px;
+    }
+    
+    & i {
+        transform:rotate(180deg);
+        transition: 0.5s;
+    }
+}
+

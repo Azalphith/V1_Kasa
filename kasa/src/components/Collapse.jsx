@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from "react";
-import '../style/Collapse.scss';
 import arrow_up from '../pictures/arrow.png';
 
 
