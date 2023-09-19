@@ -5,7 +5,6 @@ import Collapse from '../components/Collapse';
 import Rate from '../components/Rate';
 import '../style/Accomodation.scss';
 import Carousel from '../components/Carousel';
-import "../style/AccCollapse.css";
 import Error404 from "./404";
 import "../style/HomeColl.scss";
 
@@ -27,8 +26,6 @@ export default function Accomodation() {
 		return <div className='tags' key={index}>{tags}</div>
 	});
 	const equipList = accomodation.equipments.map((equipments, index) => {
-		console.log(equipments);
-		console.log(index);
 		return <div className='equipments' key={index}>{equipments}</div> 
 	});
 	
@@ -58,7 +55,7 @@ export default function Accomodation() {
 					</div>
 				</div>
 				<div className="acc_collapse">
-					<div className='acc_collapse_left'>
+					<div>
 						<Collapse
 							about={true}
 							title="Description"
@@ -66,7 +63,7 @@ export default function Accomodation() {
 							
 						/>
 					</div>
-					<div className='acc_collapse_right'>
+					<div>
 						<Collapse
 							about={true}
 							title="Equipements"
